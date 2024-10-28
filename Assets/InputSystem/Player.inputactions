@@ -25,7 +25,7 @@
                 },
                 {
                     "name": "Jump",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "d47d1dd1-ee61-4b93-9858-b1c0e0c40e31",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -34,7 +34,7 @@
                 },
                 {
                     "name": "Attack",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "d34f8d91-b1ff-4100-a715-10f6388b1c1d",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -43,7 +43,7 @@
                 },
                 {
                     "name": "Interaction",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "d1c2b545-b144-484c-b27f-c4a1783a84f0",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -52,7 +52,7 @@
                 },
                 {
                     "name": "Inventory",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "1c211083-fe79-4eab-8254-15e49eccd549",
                     "expectedControlType": "Button",
                     "processors": "",

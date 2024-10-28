@@ -6,8 +6,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [HideInInspector]
-
     [Header("Movement")]
     public float moveSpeed;
     public float jumpPower;
