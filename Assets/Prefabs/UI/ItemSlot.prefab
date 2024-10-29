@@ -294,17 +294,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4192685572665054832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb2e86d78d3ca2e488099089e357ff1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5141a9d7180556a4dabb3e36bffe14ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  inventory: {fileID: 0}
-  button: {fileID: 2415148729784385228}
-  icon: {fileID: 2947458315018030626}
-  quatityText: {fileID: 5538353180477021877}
-  index: 0
-  equipped: 0
-  quantity: 0
 --- !u!1 &5658547945487311149
 GameObject:
   m_ObjectHideFlags: 0

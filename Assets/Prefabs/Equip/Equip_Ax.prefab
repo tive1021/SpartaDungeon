@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4590293369123694252}
   - component: {fileID: 4420998282654382025}
   - component: {fileID: 5193745015025554810}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Equip_Ax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,13 +43,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2634562568310957252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e6bef73c6083a47bf8a08bc8e7303e, type: 3}
+  m_Script: {fileID: 11500000, guid: ca5154dd062a0d84ea497e4d65538a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRate: 0.8
-  attackDistance: 1
-  useStamina: 10
-  doesGatherResources: 1
+  attackRate: 0
+  attackDistance: 0
+  useStamina: 0
+  doesGatherResources: 0
   doesDealDamage: 0
   damage: 0
 --- !u!95 &5193745015025554810
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 3995016141522699235}
   - component: {fileID: 62766269365390406}
   - component: {fileID: 2826583669281814668}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Ax_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

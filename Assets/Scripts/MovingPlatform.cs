@@ -33,7 +33,11 @@ public class MovingPlatform : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
-            collision.transform.parent = transform;
+            // 플랫폼보다 플레이어가 충분히 위에 있을 때만 부모로 설정
+            if (collision.transform.position.y >= transform.position.y + 0.1f)
+            {
+                collision.transform.parent = transform;
+            }
         }
     }
 

@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float dashSpeed;
     private Vector2 curMovementInput;
     public LayerMask groundLayerMask;
+    public Animator animator;
 
     [Header("Look")]
     public Transform cameraContainer;
@@ -101,10 +102,12 @@ public class PlayerController : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed)
         {
+            animator.SetBool("IsWalking", true);
             curMovementInput = context.ReadValue<Vector2>();
         }
         else if (context.phase == InputActionPhase.Canceled)
         {
+            animator.SetBool("IsWalking", false);
             curMovementInput = Vector2.zero;
         }
     }
@@ -118,6 +121,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Started && IsGrounded())
         {
+            animator.SetTrigger("Jump");
             _rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
         }
     }
@@ -177,6 +181,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator DashCoroutine()
     {
         isDashing = true;
+        animator.SetBool("IsRunning", isDashing);
 
         while (isDashing && CharacterManager.Instance.Player.condition.UseStamina(30 * Time.deltaTime))
         {
@@ -185,5 +190,6 @@ public class PlayerController : MonoBehaviour
 
         // 대시가 끝나면 isDashing을 false로 설정해 이동 속도를 원래 속도로 변경
         isDashing = false;
+        animator.SetBool("IsRunning", isDashing);
     }
 }
